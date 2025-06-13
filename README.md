@@ -25,10 +25,10 @@ A powerful, user-friendly tool that helps developers create stunning portfolio w
 - **Templating**: Astro/Handlebars for static site generation
 - **Storage**: LocalStorage (MVP) → Firebase/Supabase (Future)
 - **Build Tools**: Vite
+- **Package Manager**: pnpm
 - **Deployment**: GitHub Pages/Vercel
 - **Testing**: Jest + React Testing Library
 - **CI/CD**: GitHub Actions
-- **Package Manager**: npm/yarn
 - **Version Control**: Git
 - **Code Quality**: ESLint + Prettier
 
@@ -81,12 +81,12 @@ git clone https://github.com/MykeShale/portfolio-builder.git
 2. Install dependencies:
 ```bash
 cd portfolio-builder
-npm install
+pnpm install
 ```
 
 3. Start the development server:
 ```bash
-npm run dev
+pnpm dev
 ```
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser
@@ -116,18 +116,18 @@ portfolio-builder/
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- npm or yarn
+- pnpm
 - Git
 
 ### Available Scripts
 
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run preview      # Preview production build
-npm run test         # Run tests
-npm run lint         # Run linter
-npm run format       # Format code with Prettier
+pnpm dev          # Start development server
+pnpm build        # Build for production
+pnpm preview      # Preview production build
+pnpm test         # Run tests
+pnpm lint         # Run linter
+pnpm format       # Format code with Prettier
 ```
 
 ## 🤝 Contributing
@@ -158,7 +158,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - Create an issue for bug reports or feature requests
-- Follow us on [Instagram](https://instagram.com/mykeshale) [Twitter](https://twitter.com/mykeshale) &&  for updates
+- Follow us on [Instagram](https://instagram.com/mykeshale) && [Twitter](https://twitter.com/mykeshale) for updates
 
 ---
 
