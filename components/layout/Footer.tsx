@@ -8,13 +8,13 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Portfolio Builder</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Code Folio</h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               Create stunning portfolio websites in minutes with our powerful, user-friendly tool.
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com/MykeShale/portfolio-builder"
+                href="https://github.com/MykeShale/code-folio"
                 className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
               >
                 <Github className="h-5 w-5" />
@@ -43,7 +43,7 @@ export function Footer() {
                   href="/builder"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"
                 >
-                  Portfolio Builder
+                  Code Folio Builder
                 </Link>
               </li>
               <li>
@@ -154,7 +154,7 @@ export function Footer() {
 
         <div className="border-t border-gray-200 dark:border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 dark:text-gray-400 text-sm">© 2024 Portfolio Builder. All rights reserved.</p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">© 2024 Code Folio. All rights reserved.</p>
             <p className="text-gray-600 dark:text-gray-400 text-sm flex items-center mt-4 md:mt-0">
               Made with <Heart className="h-4 w-4 text-red-500 mx-1" /> by Mike Ayoti
             </p>

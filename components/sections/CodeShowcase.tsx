@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { useState } from "react"
 import { Check, Copy, Terminal } from "lucide-react"
 
@@ -8,10 +7,10 @@ export function CodeShowcase() {
   const [copied, setCopied] = useState(false)
 
   const codeExample = `// Generate your portfolio with a single command
-npx create-portfolio-builder my-portfolio
+npx create-code-folio my-portfolio
 
 // Or use our visual builder
-const portfolio = new PortfolioBuilder()
+const portfolio = new CodeFolio()
   .setTheme('cyberpunk')
   .addProject({
     name: 'AI Chat App',
@@ -31,12 +30,7 @@ console.log('🚀 Portfolio deployed successfully!')`
   return (
     <section className="py-32 relative">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Code Your Way to
             <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"> Success</span>
@@ -44,14 +38,9 @@ console.log('🚀 Portfolio deployed successfully!')`
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
             Whether you prefer visual builders or command-line interfaces, we've got you covered.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
-        >
+        <div className="max-w-4xl mx-auto animate-fade-in-up">
           <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-700/50 rounded-2xl overflow-hidden shadow-2xl">
             {/* Terminal header */}
             <div className="flex items-center justify-between px-6 py-4 bg-slate-800/50 border-b border-slate-700/50">
@@ -62,13 +51,11 @@ console.log('🚀 Portfolio deployed successfully!')`
               </div>
               <div className="flex items-center gap-2 text-slate-400">
                 <Terminal className="h-4 w-4" />
-                <span className="text-sm font-mono">portfolio-builder</span>
+                <span className="text-sm font-mono">code-folio</span>
               </div>
-              <motion.button
+              <button
                 onClick={handleCopy}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-3 py-1 rounded-md bg-slate-700/50 hover:bg-slate-600/50 transition-colors"
+                className="flex items-center gap-2 px-3 py-1 rounded-md bg-slate-700/50 hover:bg-slate-600/50 transition-colors transform hover:scale-105"
               >
                 {copied ? (
                   <>
@@ -81,7 +68,7 @@ console.log('🚀 Portfolio deployed successfully!')`
                     <span className="text-sm text-slate-400">Copy</span>
                   </>
                 )}
-              </motion.button>
+              </button>
             </div>
 
             {/* Code content */}
@@ -91,27 +78,19 @@ console.log('🚀 Portfolio deployed successfully!')`
               </pre>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(10)].map((_, i) => (
-            <motion.div
+            <div
               key={i}
-              className="absolute w-2 h-2 bg-cyan-400/30 rounded-full"
-              animate={{
-                x: [0, Math.random() * 100 - 50],
-                y: [0, Math.random() * 100 - 50],
-                opacity: [0, 1, 0],
-              }}
-              transition={{
-                duration: Math.random() * 3 + 2,
-                repeat: Number.POSITIVE_INFINITY,
-                delay: Math.random() * 2,
-              }}
+              className="absolute w-2 h-2 bg-cyan-400/30 rounded-full animate-float"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
+                animationDuration: `${Math.random() * 3 + 2}s`,
               }}
             />
           ))}
