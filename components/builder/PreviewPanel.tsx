@@ -77,7 +77,7 @@ export function PreviewPanel() {
                 </div>
                 <h3 className="text-white text-lg font-semibold mb-2">Preview Coming Soon</h3>
                 <p className="text-slate-400 text-sm mb-2">Live preview functionality</p>
-                <p className="text-slate-500 text-xs">Day 7 Implementation</p>
+                <p className="text-slate-500 text-xs">Feature in development</p>
 
                 {/* Animated dots */}
                 <div className="flex justify-center gap-1 mt-4">
@@ -124,12 +124,12 @@ export function PreviewPanel() {
         <div className="space-y-3">
           <div className="flex justify-between text-sm">
             <span className="text-slate-400">Development Progress</span>
-            <span className="text-cyan-400">Day 3/30</span>
+            <span className="text-cyan-400">In Progress</span>
           </div>
           <div className="w-full bg-slate-800 rounded-full h-2">
-            <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-2 rounded-full w-[10%] animate-pulse" />
+            <div className="bg-gradient-to-r from-cyan-500 to-purple-500 h-2 rounded-full w-[25%] animate-pulse" />
           </div>
-          <p className="text-xs text-slate-500 text-center">Export and deployment features coming in Week 2</p>
+          <p className="text-xs text-slate-500 text-center">Export and deployment features coming soon</p>
         </div>
       </CardContent>
     </div>

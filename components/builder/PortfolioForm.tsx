@@ -242,7 +242,7 @@ export function PortfolioForm() {
                       <Briefcase className="h-8 w-8 text-white" />
                     </div>
                     <p className="text-slate-400 text-lg mb-2">Project Management Coming Soon</p>
-                    <p className="text-slate-500 text-sm">Day 6: Add, edit, and showcase your amazing projects</p>
+                    <p className="text-slate-500 text-sm">Add, edit, and showcase your amazing projects</p>
                   </div>
                 </CardContent>
               </Card>
@@ -264,7 +264,7 @@ export function PortfolioForm() {
                       <Settings className="h-8 w-8 text-white" />
                     </div>
                     <p className="text-slate-400 text-lg mb-2">Advanced Settings Coming Soon</p>
-                    <p className="text-slate-500 text-sm">Day 11: Theme selection, colors, and layout customization</p>
+                    <p className="text-slate-500 text-sm">Theme selection, colors, and layout customization</p>
                   </div>
                 </CardContent>
               </Card>
