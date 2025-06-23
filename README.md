@@ -1,4 +1,4 @@
-# Portfolio Builder Tool
+# Code Folio Tool
 
 A powerful, user-friendly tool that helps developers create stunning portfolio websites in minutes. Fill out a form, preview your portfolio, and deploy it with a single click!
 
@@ -91,7 +91,7 @@ Open http://localhost:5173 in your browser
 
 ## 📦 Project Structure
 ```
-portfolio-builder/
+code-folio/
 ├── public/              # Static assets
 ├── src/
 │   ├── components/      # Reusable React components
