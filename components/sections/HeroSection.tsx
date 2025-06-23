@@ -61,7 +61,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/20 backdrop-blur-sm mb-8 animate-fade-in">
             <Sparkles className="h-4 w-4 mr-2 text-cyan-400" />
-            <span className="text-cyan-300 text-sm font-medium">Professional Portfolio Builder</span>
+            <span className="text-cyan-300 text-sm font-medium">Professional Code Folio Builder</span>
           </div>
 
           {/* Main heading with typewriter effect */}

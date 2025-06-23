@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import {
   Terminal,
   Smartphone,
@@ -96,12 +95,7 @@ export function FeaturesSection() {
   return (
     <section className="py-32 relative">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-20"
-        >
+        <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Everything You Need to
             <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
@@ -113,29 +107,20 @@ export function FeaturesSection() {
             Packed with cutting-edge features designed by developers, for developers. Build portfolios that stand out in
             today's competitive landscape.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -10, scale: 1.02 }}
-              className="group"
-            >
-              <div className="bg-slate-900/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-slate-600/50 transition-all duration-500 h-full">
+            <div key={index} className="group animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div className="bg-slate-900/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-slate-600/50 transition-all duration-500 h-full transform hover:-translate-y-2">
                 <div className="relative mb-6">
                   <div
                     className={`bg-gradient-to-r ${feature.gradient} p-4 rounded-2xl w-fit group-hover:scale-110 transition-transform duration-300`}
                   >
                     <feature.icon className="h-8 w-8 text-white" />
                   </div>
-                  <motion.div
+                  <div
                     className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300`}
-                    initial={false}
                   />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-cyan-300 transition-colors">
@@ -145,32 +130,23 @@ export function FeaturesSection() {
                   {feature.description}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Call to action */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mt-20"
-        >
+        <div className="text-center mt-20 animate-fade-in-up">
           <div className="bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border border-cyan-500/20 rounded-3xl p-12 max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-white mb-6">Ready to Build Something Amazing?</h3>
             <p className="text-slate-300 mb-8 text-lg">
-              Join thousands of developers who've already created stunning portfolios with our platform.
+              Join thousands of developers who've already created stunning portfolios with Code Folio.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-cyan-500/25 transition-all duration-300"
-            >
+            <button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105">
               <Rocket className="inline-block mr-2 h-5 w-5" />
               Start Building Now
-            </motion.button>
+            </button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

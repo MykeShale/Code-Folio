@@ -46,7 +46,7 @@ export function Header() {
                 <div className="absolute inset-0 bg-cyan-400/20 rounded-full blur-xl animate-pulse" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                Portfolio Builder
+                Code Folio
               </span>
             </Link>
           </div>
@@ -75,7 +75,7 @@ export function Header() {
                 asChild
                 className="border-slate-600 text-slate-300 hover:bg-slate-800"
               >
-                <Link href="https://github.com/MykeShale/portfolio-builder">
+                <Link href="https://github.com/MykeShale/code-folio">
                   <Github className="h-4 w-4 mr-2" />
                   Star Our GitHub
                 </Link>
